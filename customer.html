@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Support • Social Growth</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 20% 20%,#00f2ff22,transparent 40%),
+    radial-gradient(circle at 80% 80%,#00ff8822,transparent 40%),
+    linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* Floating glow */
+body::before{
+  content:"";
+  position:fixed;
+  width:500px;
+  height:500px;
+  background:radial-gradient(circle,#00f2ff55,transparent 60%);
+  top:-200px;
+  left:-200px;
+  animation:move 12s infinite alternate;
+}
+@keyframes move{
+  from{transform:translate(0,0)}
+  to{transform:translate(200px,200px)}
+}
+
+/* ===== TOPBAR ===== */
+.topbar{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(15px);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  height:55px;   /* Bigger logo */
+}
+
+/* ===== CONTAINER ===== */
+.container{
+  padding:30px 20px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(20px);
+  border-radius:30px;
+  padding:25px;
+  margin-bottom:25px;
+  box-shadow:0 30px 70px rgba(0,0,0,.6);
+  animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:none}
+}
+
+h2{
+  margin-bottom:15px;
+  background:linear-gradient(135deg,#00eaff,#00ff88);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  display:block;
+  text-align:center;
+  margin-top:15px;
+  padding:14px;
+  border-radius:25px;
+  font-weight:900;
+  text-decoration:none;
+  background:linear-gradient(135deg,#00eaff,#00ff88);
+  color:#000;
+  box-shadow:0 0 25px rgba(0,255,200,.8);
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* Floating chat button */
+.chat-btn{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:linear-gradient(135deg,#00ff88,#00eaff);
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  box-shadow:0 0 25px rgba(0,255,200,.9);
+  cursor:pointer;
+  transition:.3s;
+}
+
+.chat-btn:hover{
+  transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <img src="logo.png" class="logo">
+</div>
+
+<div class="container">
+
+<div class="card">
+  <h2>📞 Customer Support</h2>
+  <p>
+    Social Growth ek secure aur privacy-focused platform hai.
+    Hum kabhi bhi kisi user ka Instagram ID password nahi lete.
+    Aapko sirf public link provide karna hota hai.
+  </p>
+  <br>
+  <p>
+    💡 Transparent pricing system<br>
+    🔐 No password collection<br>
+    ⚡ Fast manual approval process<br>
+    🛡 Safe & reliable services
+  </p>
+</div>
+
+<div class="card">
+  <h2>📲 Instagram Support</h2>
+  <p>@er_broken_x_ravi</p>
+  <a class="btn" href="https://instagram.com/er_broken_x_ravi" target="_blank">
+    Open Instagram
+  </a>
+
+  <br>
+
+  <p>@social.growth_official</p>
+  <a class="btn" href="https://instagram.com/social.growth_official" target="_blank">
+    Open Official Page
+  </a>
+</div>
+
+<div class="card">
+  <h2>📧 Email Support</h2>
+
+  <a class="btn" href="mailto:hardffm90@gmail.com">
+    hardffm90@gmail.com
+  </a>
+
+  <a class="btn" href="mailto:hardffm91@gmail.com">
+    hardffm91@gmail.com
+  </a>
+</div>
+
+</div>
+
+<!-- Floating Chat Button -->
+<div class="chat-btn" onclick="window.location.href='https://instagram.com/social.growth_official'">
+💬
+</div>
+
+</body>
+</html>
